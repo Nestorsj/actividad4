@@ -17,6 +17,8 @@ public class Principal {
 		System.out.println(factorialFacil(5));
 		
 		System.out.println(factorialRecusivo(6));
+		
+		sumaFactoriales(7, 9);
 	}
 	
 	public static int factorialFacil(int num) {
@@ -37,5 +39,10 @@ public class Principal {
 		}else {
 			return num * factorialRecusivo(num-1);
 		}
+	}
+	
+	public static void sumaFactoriales(int fact1, int fact2) {
+		
+		System.out.println("La suma de los dos factoriales es: " + (factorialFacil(fact1) + factorialRecusivo(fact2)));
 	}
 }
