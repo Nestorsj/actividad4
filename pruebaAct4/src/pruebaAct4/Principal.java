@@ -12,6 +12,7 @@ public class Principal {
 		
 		System.out.println("Hoy es: " + hoy);
 
+		System.out.println("Ya si que funciona todo correctamente");
 	}
 
 }
