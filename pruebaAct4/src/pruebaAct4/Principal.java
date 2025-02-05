@@ -15,6 +15,8 @@ public class Principal {
 		System.out.println("Ya si que funciona todo correctamente");
 		
 		System.out.println(factorialFacil(5));
+		
+		System.out.println(factorialRecusivo(6));
 	}
 	
 	public static int factorialFacil(int num) {
@@ -28,4 +30,12 @@ public class Principal {
 		return fact;
 	}
 
+	public static int factorialRecusivo(int num) {
+		
+		if(num == 0) {
+			return 1;
+		}else {
+			return num * factorialRecusivo(num-1);
+		}
+	}
 }
