@@ -2,6 +2,15 @@ package pruebaAct4;
 
 import java.time.LocalDate;
 
+/**
+ * <h2>Esto es un ejemplo de documetación</h2>
+ * Puedo añadir etiquetas html para <b>mejorar</b> la presentación. * 
+ * 
+ * @author nesto
+ * @version v1.2025
+ * @see <a href="http://www.google.es">Google</a>
+ */
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -21,16 +30,38 @@ public class Principal {
 		sumaFactoriales(7, 9);
 	}
 	
+	//Metodos publicos
+	
+	/**
+	 * Realiza el factorial de un número con bucle for
+	 * 
+	 * @param num
+	 * @return c
+	 */
+	
 	public static int factorialFacil(int num) {
 		
 		int fact = 1;
 		
-		for(int i=2;i<=num;i++) {
-			fact = fact * i;
+		if(fact>0) {
+			for(int i=2;i<=num;i++) {
+				fact = fact * i;
+			}
+			
+			return fact;
 		}
-		
-		return fact;
+		return 0;
 	}
+	
+	/**
+	 * Realiza el factorial de num de forma recursiva
+	 * 
+	 * @param num
+	 * @return <ul>
+	 * 			<li>num: se calcula el factorial en la misma variable de entrada</li>
+	 * 			<li>1: El numero pasado es cero</li>
+	 * 		</ul>
+	 */
 
 	public static int factorialRecusivo(int num) {
 		
@@ -40,6 +71,14 @@ public class Principal {
 			return num * factorialRecusivo(num-1);
 		}
 	}
+	
+	/**
+	 * Crea una salida String con la suma de dos numeros, a los cuales se les calcula el factorial con los metodos
+	 * factorialFacil y factorialRecursivo
+	 * 
+	 * @param fact1
+	 * @param fact2
+	 */
 	
 	public static void sumaFactoriales(int fact1, int fact2) {
 		

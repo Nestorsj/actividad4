@@ -1,0 +1,1 @@
+tagSearchIndex = [{"l":"Esto es un ejemplo de documetación","h":"class pruebaAct4.Principal","d":"Section","u":"pruebaAct4/Principal.html#esto-es-un-ejemplo-de-documetaci-n-heading"}];updateSearchResults();
