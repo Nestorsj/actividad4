@@ -9,7 +9,7 @@ public class Cambio {
 		
 		System.out.println("Creo otra línea en la clase Cambio");
 		
-		System.out.println("Creo otra línea en la clase Cambio");
+		System.out.println("Otra linea diferente");
 
 	}
 
